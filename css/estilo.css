@@ -1,174 +1,229 @@
+/*Importando fonte - Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-
-html, body{
-    height: 100%;
-    margin: 0;
-    bottom: 0;
-    margin-top: -10px;
-    padding: 0;
-    background-color: rgb(1, 87, 87);
+/*Seletor universal*/
+*{
+    box-sizing: border-box;
+    font-size: 100%;
 }
 
+/*Tirando margens, definindo fundo, fixando footer no final da página*/
+body,html{
+    margin: 0px;
+    bottom: 0px;
+    height: 100%;
+}
+body{
+    background-color: rgb(105, 104, 104);
+}
 
 #Tudo{
     min-height: 100%;
-    
 }
-
-header{
-    background-color: rgb(3, 49, 49);
-    padding: 20px;
-    
-   
-}
-
-.text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
-    margin-top: 0px;
-    margin-left: -10px;
-    color: rgb(196, 194, 194);
-
-  
-}
-
-#text2{
-        font-family: Arial, Helvetica, sans-serif;
-    
-}
-#fundo{
-    background-color: rgb(72, 77, 77);
-    position: absolute;
-    width: 100%;
-    box-shadow: 0px 15px rgb(1, 26, 26);
-}
-
-.text3 a{
-    text-decoration: none;
-    font-size: 35px;
-    padding: 10px;
-    color: rgb(128, 124, 124);
-    border-right: solid 15px rgb(10, 9, 8);
-}
-
-
-.text3 a:hover{
-    color: rgb(255, 255, 255);
-    padding: 16px;
-    box-shadow: 0px 15px rgb(59, 65, 65);
-
-}
-#text4{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: -60px;
-    margin-left: 240px;
-   
-}
-
-section{
-    margin-top: 150px;
-    padding-top: 30px;
-    display: block;
-    box-shadow: 18px 18px rgb(53, 52, 52);
-    margin-left: 8%;
-	padding-bottom: 30px;
-    width: 85%;
-    
-    background-color: snow;
-}
-
-.Cro{
-    background-color: black;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-   border-radius: 50px;
-    color: white;
-}
-.Cro2{
-    background-color: rgb(165, 159, 159);
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    margin-top: -40px;
-    color: white;
-}
-
-
-
-
-
-#text4 a:hover{
-
-    color: rgb(255, 255, 255);
-    padding: 16px;
-    box-shadow: 0px 15px rgb(59, 65, 65);
-    
-
- }
-
-
-
-
-
-
-
+/*Estilo de rodapé*/
 
 footer{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin-top: 100px;
-    background-color: rgb(61, 59, 59);
-    color: rgb(184, 184, 184);
-    padding: 1px;
-    text-align: center;
-    box-shadow: 0px -15px rgb(44, 46, 46);
-}
-
-#fonte{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 50px;
-    padding: 25px;
-    font-style: oblique;
-}
-
-.fonte2{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 25px;
-    padding: 15px;
-    color: rgb(35, 46, 58);
-    font-style: oblique;
-}
-
-.botoens{
+    padding: 5px;
     margin-top: 50px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0px -7px rgb(75, 72, 72);
+    position: relative;
+}
+
+.TextFooter{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.Tag{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.Discord{
+    width: 30px;
+    position: absolute;
+}
+
+/*Header*/
+
+
+header{
+    top: 0px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0px 7px rgb(75, 72, 72);
+    
+}
+
+header p{
+    display: inline-block;
+    float: inline-end;
+    font-size: 35px;
+    margin: 15px 15px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/*Menu lateral*/
+
+label{
+   cursor: pointer;
+   color: rgb(255, 255, 255);
+   font-size: 50px;
+   height: 100%;
+}
+
+#Menu{
+    display: none;
+}
+.nav{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -20%;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    padding: 5px;
+    transition: all linear .45s .01s;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.nav li{
+    list-style: none;
+    box-sizing: content-box;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+hr{
+    margin-left: -35px;
+}
+
+.temp{
+    margin-top: 25px;
+}
+
+.nav ul{
+    transition: all .5s;
+    margin-left: -30px;
+}
+
+#Menu:checked ~ .nav{
+    margin-left: 0px;
+}
+
+#Menu:checked ~ label{
+    color: rgb(40, 150, 150);
+}
+
+
+/*Sessão de conteúdo*/
+
+section{
+    box-shadow: 0px -60px  rgb(189, 184, 184) ;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100%;
+    background-color: rgb(189, 184, 184);
+}
+
+#Text{
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: black;
+    padding: 100px;
+    margin-top: 100px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 55px;
     text-align: center;
 }
 
-#Iniciar{
-    background-color: rgb(184, 185, 185);
-    cursor: pointer;
-    border: 8px solid black;
-    box-shadow: 5px 5px rgb(48, 47, 47);
-}
-#Iniciar:hover{
-    background-color: rgb(125, 129, 129);
-    cursor: pointer;
-    border: 8px solid black;
-    margin-left: 15px;
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#Zerar{
-    background-color: rgb(184, 185, 185);
+input{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    margin-right: 20px;
+    background-color: cadetblue;
+    border: 2px solid black;
     cursor: pointer;
-    border: 8px solid black;
-    margin-left: 10px;
-    box-shadow: 5px 5px rgb(48, 47, 47);
 }
-#Zerar:hover{
-    background-color: rgb(125, 129, 129);
-    cursor: pointer;
-    border: 8px solid black;
-    margin-left: 15px;
+
+input:hover{
+    transition: all .2s;
+    font-size: 31px;
+    background-color: rgb(68, 117, 119);
+    margin-top: -5px;
 }
+
+/*Impedindo que clique em algo fora da tela*/
+
+.bg{
+    top: 70px;
+    width: 100%;
+    height: 101.5%;
+    background-color: rgb(41, 40, 40);
+    opacity: 0.6;
+    position: absolute;
+    visibility: hidden;
+    transition-delay: 0.43s;
+}
+
+#Menu:checked ~ .bg{
+    visibility: visible;
+}
+
+
+
+@media(max-width: 845px){
+    .nav{
+        position: absolute;
+        margin-top: 5px;
+        margin-left: -40%;
+        height: 100%;
+        background-color: rgb(37, 37, 37);
+        padding: 5px;
+        transition: all linear .45s .01s;
+    }
+    
+}
+
+@media(max-width: 550px){
+    
+    #Text{
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: black;
+        padding: 80px;
+        margin-top: 100px;
+        font-family: 'Orbitron', sans-serif;
+        color: white;
+        font-size: 45px;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
