@@ -87,7 +87,7 @@ label{
     height: 100%;
     background-color: rgb(37, 37, 37);
     padding: 5px;
-    transition: all linear .45s .01s;
+    transition: all linear .3s .01s;
 }
 
 .nav a{
@@ -112,7 +112,6 @@ hr{
 }
 
 .nav ul{
-    transition: all .5s;
     margin-left: -30px;
 }
 
@@ -180,7 +179,7 @@ input:hover{
     opacity: 0.6;
     position: absolute;
     visibility: hidden;
-    transition-delay: 0.43s;
+    transition-delay: 0.1s;
 }
 
 #Menu:checked ~ .bg{
@@ -197,7 +196,7 @@ input:hover{
         height: 100%;
         background-color: rgb(37, 37, 37);
         padding: 5px;
-        transition: all linear .45s .01s;
+        transition: all linear .25s .01s;
     }
     
 }
