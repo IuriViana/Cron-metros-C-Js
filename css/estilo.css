@@ -152,7 +152,7 @@ form{
     align-items: center;
 }
 
-input{
+.button{
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
     padding: 15px;
@@ -162,11 +162,9 @@ input{
     cursor: pointer;
 }
 
-input:hover{
+.button:hover{
     transition: all .2s;
-    font-size: 31px;
     background-color: rgb(68, 117, 119);
-    margin-top: -5px;
 }
 
 /*Impedindo que clique em algo fora da tela*/
@@ -216,6 +214,30 @@ input:hover{
     }
 
 
+}
+
+.Cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dados{
+    display: none;
+}
+
+span{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.TextForm{
+    margin-top: 30px;
+    width: 150px;
+    border: solid 1px black;
+    font-size: 18px;
+    font-family: 'Orbitron';
+    color: rgb(0, 0, 0);
 }
 
 
