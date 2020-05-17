@@ -7,9 +7,6 @@ var audio = new Audio('alarme-de-carro.mp3');
 var h = document.getElementById('Hora').value;
 var min = document.getElementById('Min').value;
 var s = document.getElementById('Secon').value;
-var ts = 0;
-var tmin = 0;
-var th = 0;
 
 //Mudando .value do bottão definir a partir do evento de click.
 document.getElementById('definir').addEventListener('click', function clicar(){
@@ -25,10 +22,17 @@ document.getElementById('definir').addEventListener('click', function clicar(){
         s = document.getElementById('Secon').value;
         Button.value = "Pausar"
         entrada.style.display = "none"
+
+        if(s<0||min<0||h<0){
+            res.innerHTML = " Inválido!"
+            Button.value = "Definir"
+        }
     }
     else if(Button.value == "Pausar"){
+        if(s>60||min>60||h>100){
+            res.innerHTML = " Invalido!"
+        }
         Button.value = "Reiniciar"
-
     }
     else if(Button.value == "Reiniciar"){
         Button.value = "Pausar"
