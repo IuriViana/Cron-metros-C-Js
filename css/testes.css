@@ -1,0 +1,52 @@
+html,body{
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    margin-left: 5px;
+    height: 220px;
+    margin: 5px;
+}
+
+.card img{ 
+    width: 150px;
+    height: 220px;
+}
+
+.container{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card .Flip{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.Back,.Front{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.Back{
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card:hover .Flip{
+transform: perspective(1000px)  rotateY(180deg);
+}
