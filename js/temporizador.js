@@ -65,7 +65,6 @@ function cro(){
         min--
         s=60
     }
-    s--
     if(h==="" && min===""){
         h=0;
         min=0;
@@ -76,6 +75,10 @@ function cro(){
     if(min===""){
         min=0;
     }
+s--
+if(s==-1){
+    s=0;
+}
 
         if(h<10&&min<10&&s<10){
             res.innerHTML = "0"+h+":"+"0"+min+":"+"0"+s;
