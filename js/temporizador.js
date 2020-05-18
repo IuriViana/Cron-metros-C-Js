@@ -52,11 +52,6 @@ res.innerText = "00:00:00"
 function cro(){
     if(Button.value == "Pausar"){
 
-
-
-
-
-
     if(s==0&&min==0&&h==0){
         audio.play();
         Button.value = "Definir";
@@ -70,7 +65,7 @@ function cro(){
         min--
         s=60
     }
-
+    s--
     if(h==="" && min===""){
         h=0;
         min=0;
@@ -106,7 +101,6 @@ function cro(){
         else{
             res.innerHTML = h+":"+min+":"+s;
         }
-        s--
     }
 }
 setInterval(cro,1000);
