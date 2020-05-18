@@ -1,11 +1,14 @@
-html,body{
-    height: 100%;
-}
+
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
+
+html,body{
+    height: 100%;
+}
+
 
 .card {
     position: relative;
@@ -32,7 +35,7 @@ html,body{
     align-items: center;
 }
 
-
+  
 .card .Flip{
     transition: transform 0.5s;
     transform-style: preserve-3d;
@@ -49,4 +52,20 @@ html,body{
 
 .card:hover .Flip{
 transform: perspective(1000px)  rotateY(180deg);
+}
+
+
+@media(max-width:550px){
+
+    .card {
+        position: relative;
+        width: 135px;
+        margin-left: 5px;
+        height: 205px;
+        margin: 5px;
+    }
+    .card img{ 
+        width: 135px;
+        height: 205px;
+    }
 }
